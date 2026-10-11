@@ -1,0 +1,18 @@
+{
+  "name": "셀러AI 원격",
+  "short_name": "셀러AI",
+  "description": "내 PC를 폰으로 여는 바로가기 (원격 앱 연결)",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5F8F6",
+  "theme_color": "#007E51",
+  "lang": "ko",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

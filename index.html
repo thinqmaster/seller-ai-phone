@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>셀러AI 원격</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#007E51">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="셀러AI">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="icons/apple-touch.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="launcher.css">
+</head><body>
+<div id="app">
+  <header><div><div class="t">셀러AI</div><div class="s">내 PC를 폰으로 여는 바로가기</div></div></header>
+  <main>
+    <section class="launch">
+      <a id="open" class="big" href="#" target="_blank" rel="noopener">🖥 PC 열기 <small>원격 앱으로 내 PC 화면이 열립니다</small></a>
+      <p class="hint">결제 비밀번호는 열린 PC 화면의 결제창에서 <b>형님이 직접</b> 넣습니다. 이 바로가기는 비밀번호·카드 정보를 받거나 저장하지 않습니다.</p>
+    </section>
+
+    <section class="card" id="steps">
+      <div class="k">처음 한 번만 (체크하면 기억해요)</div>
+      <label class="st"><input type="checkbox" data-s="1"><span><b>① 폰에 원격 앱 설치</b><small id="storeNote">Chrome 원격 데스크톱 앱</small><a id="store" class="lnk" href="#" target="_blank" rel="noopener">앱 받기</a></span></label>
+      <label class="st"><input type="checkbox" data-s="2"><span><b>② PC에서 원격 접속 켜기</b><small>PC 크롬에서 아래 주소를 열고 「원격 접속 설정」 → 이 PC 이름과 PIN을 정합니다.</small><a class="lnk" href="https://remotedesktop.google.com/access" target="_blank" rel="noopener">remotedesktop.google.com/access</a></span></label>
+      <label class="st"><input type="checkbox" data-s="3"><span><b>③ 위 「PC 열기」로 연결 확인</b><small>같은 구글 계정으로 로그인 → PC 이름 누르기 → PIN 입력</small></span></label>
+    </section>
+
+    <section class="card" id="install">
+      <div class="k">홈 화면에 아이콘 만들기</div>
+      <div class="m" id="installNote"></div>
+    </section>
+
+    <section class="card">
+      <div class="k">결제창이 작거나 잘리면</div>
+      <div class="m">PC의 SELLER AI <b>주문 화면 → 폰 비율 결제창</b>에서 이 폰 종류를 고르면 결제창이 폰 비율로 맞춰집니다.</div>
+    </section>
+
+    <section class="card">
+      <div class="k">원격 주소 바꾸기 <small class="m">(다른 원격 앱을 쓸 때만)</small></div>
+      <input type="url" id="ru" placeholder="https://로 시작하는 주소">
+      <div class="row2"><button class="btn" id="sv" type="button">저장</button><button class="btn sub" id="rs" type="button">처음 값으로</button></div>
+    </section>
+    <div class="note">알림(새 주문·결제 직전 등)은 카카오톡으로 옵니다. 주문 준비·송장·결제는 원격으로 연 PC 화면에서 합니다.</div>
+  </main>
+</div>
+<script src="launcher.js"></script>
+</body></html>
